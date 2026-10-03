@@ -1,0 +1,45 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag_fastapi_backend
+    restart: unless-stopped
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ENVIRONMENT=production
+      - BACKEND_HOST=0.0.0.0
+      - BACKEND_PORT=8000
+      - DATA_DIR=/app/data
+      - DOCUMENTS_DIR=/app/data/documents
+      - VECTORSTORE_DIR=/app/data/vectorstore
+      - DATABASE_URL=sqlite:////app/data/chatbot.db
+      - EMBEDDING_MODEL_NAME=BAAI/bge-base-en-v1.5
+      - LLM_PROVIDER=hf_local
+      - LLM_MODEL_NAME=Qwen/Qwen2.5-0.5B-Instruct
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rag_streamlit_frontend
+    restart: unless-stopped
+    command: streamlit run frontend/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      backend:
+        condition: service_healthy

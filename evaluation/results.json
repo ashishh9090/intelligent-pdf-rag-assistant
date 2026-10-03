@@ -1,0 +1,319 @@
+{
+  "total_questions_evaluated": 20,
+  "hit_rate": 0.8,
+  "retrieval_precision": 0.625,
+  "retrieval_recall": 0.75,
+  "faithfulness_groundedness": 0.8,
+  "citation_correctness": 0.75,
+  "negative_refusal_accuracy": 1.0,
+  "breakdown": [
+    {
+      "id": 1,
+      "category": "simple_factual",
+      "question": "What was Acme Corp's total revenue in fiscal year 2024?",
+      "rewritten_query": "What was Acme Corp's total revenue in fiscal year 2024?",
+      "answer": "Based on the provided documents: Financial Performance 2024: In fiscal year 2024, Acme Corp reported total revenue of $5...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P1"
+      ]
+    },
+    {
+      "id": 2,
+      "category": "simple_factual",
+      "question": "What was Acme Corp's gross profit and gross margin in 2024?",
+      "rewritten_query": "What was Acme Corp's gross profit and gross margin in 2024?",
+      "answer": "Based on the provided documents: Financial Performance 2024: In fiscal year 2024, Acme Corp reported total revenue of $5...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P1"
+      ]
+    },
+    {
+      "id": 3,
+      "category": "simple_factual",
+      "question": "How much did Acme Corp spend on Research and Development in 2024?",
+      "rewritten_query": "How much did Acme Corp spend on Research and Development in 2024?",
+      "answer": "Based on the provided documents: Financial Performance 2024: In fiscal year 2024, Acme Corp reported total revenue of $5...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P1"
+      ]
+    },
+    {
+      "id": 4,
+      "category": "simple_factual",
+      "question": "In what year was Acme Corp founded?",
+      "rewritten_query": "In what year was Acme Corp founded?",
+      "answer": "Based on the provided documents: Acme Corp Annual Report 2024. Executive Summary:\n\nSources:\n[1] annual_report_2024.pdf —...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P1",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P2"
+      ]
+    },
+    {
+      "id": 5,
+      "category": "simple_factual",
+      "question": "What was Acme Corp's total employee headcount at the end of 2024?",
+      "rewritten_query": "What was Acme Corp's total employee headcount at the end of 2024?",
+      "answer": "Based on the provided documents: Financial Performance 2024: In fiscal year 2024, Acme Corp reported total revenue of $5...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": false,
+      "sources": [
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P1"
+      ]
+    },
+    {
+      "id": 6,
+      "category": "simple_factual",
+      "question": "What was the average customer satisfaction score (CSAT) in 2024?",
+      "rewritten_query": "What was the average customer satisfaction score (CSAT) in 2024?",
+      "answer": "Based on the provided documents: Workforce & Operations: Total employee headcount reached 450 full-time team members by ...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P3",
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2"
+      ]
+    },
+    {
+      "id": 7,
+      "category": "simple_factual",
+      "question": "What was Acme Corp's total revenue reported in 2025?",
+      "rewritten_query": "What was Acme Corp's total revenue reported in 2025?",
+      "answer": "Based on the provided documents: Financial Highlights 2025: In fiscal year 2025, Acme Corp reported total revenue of $65...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P2",
+        "annual_report_2024.pdf:P1"
+      ]
+    },
+    {
+      "id": 8,
+      "category": "simple_factual",
+      "question": "What was the operating income for fiscal year 2025?",
+      "rewritten_query": "What was the operating income for fiscal year 2025?",
+      "answer": "Based on the provided documents: Financial Highlights 2025: In fiscal year 2025, Acme Corp reported total revenue of $65...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P2",
+        "annual_report_2024.pdf:P3"
+      ]
+    },
+    {
+      "id": 9,
+      "category": "simple_factual",
+      "question": "Where was the new research center opened according to the 2025 report?",
+      "rewritten_query": "Where was the new research center opened according to the 2025 report?",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "grounded": false,
+      "citation_correct": false,
+      "sources": []
+    },
+    {
+      "id": 10,
+      "category": "multi_hop",
+      "question": "Based on the 2024 financial figures, what was the ratio or difference between gross profit and R&D spending?",
+      "rewritten_query": "Based on the 2024 financial figures, what was the ratio or difference between gross profit and R&D spending?",
+      "answer": "Based on the provided documents: Financial Performance 2024: In fiscal year 2024, Acme Corp reported total revenue of $5...",
+      "hit": true,
+      "precision": 0.5,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2025.pdf:P1"
+      ]
+    },
+    {
+      "id": 11,
+      "category": "multi_hop",
+      "question": "How did workforce expansion relate to strategic growth priorities between 2024 and 2025?",
+      "rewritten_query": "How did workforce expansion relate to strategic growth priorities between 2024 and 2025?",
+      "answer": "Based on the provided documents: Workforce 2025: Total global headcount expanded to 600 employees with a new European hu...",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2025.pdf:P3",
+        "annual_report_2025.pdf:P1",
+        "annual_report_2024.pdf:P3"
+      ]
+    },
+    {
+      "id": 12,
+      "category": "multi_document",
+      "question": "Compare the total revenue reported in the 2024 and 2025 reports.",
+      "rewritten_query": "Compare the total revenue reported in the 2024 and 2025 reports.",
+      "answer": "Based on the provided documents: Financial Performance 2024: In fiscal year 2024, Acme Corp reported total revenue of $5...",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P2",
+        "annual_report_2025.pdf:P2",
+        "annual_report_2024.pdf:P3"
+      ]
+    },
+    {
+      "id": 13,
+      "category": "multi_document",
+      "question": "How did total employee headcount change from 2024 to 2025?",
+      "rewritten_query": "How did total employee headcount change from 2024 to 2025?",
+      "answer": "Based on the provided documents: Workforce & Operations: Total employee headcount reached 450 full-time team members by ...",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": [
+        "annual_report_2024.pdf:P3",
+        "annual_report_2025.pdf:P3",
+        "annual_report_2025.pdf:P2"
+      ]
+    },
+    {
+      "id": 14,
+      "category": "multi_document",
+      "question": "What were the strategic focuses stated in the executive summaries of 2024 versus 2025?",
+      "rewritten_query": "What were the strategic focuses stated in the executive summaries of 2024 versus 2025?",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "grounded": false,
+      "citation_correct": false,
+      "sources": []
+    },
+    {
+      "id": 15,
+      "category": "conversational_followup",
+      "question": "How much did it increase compared to the previous year?",
+      "rewritten_query": "How much did it increase compared to the previous year? for Acme Corp",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "grounded": false,
+      "citation_correct": false,
+      "sources": []
+    },
+    {
+      "id": 16,
+      "category": "conversational_followup",
+      "question": "How many people were in that workforce by the end of 2025?",
+      "rewritten_query": "How many people were in that workforce by the end of 2025? for Acme Corp",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": false,
+      "precision": 0.0,
+      "recall": 0.0,
+      "grounded": false,
+      "citation_correct": false,
+      "sources": []
+    },
+    {
+      "id": 17,
+      "category": "unanswerable_negative",
+      "question": "What is the secret formula for Martian rocket fuel invented in 1840?",
+      "rewritten_query": "What is the secret formula for Martian rocket fuel invented in 1840?",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": []
+    },
+    {
+      "id": 18,
+      "category": "unanswerable_negative",
+      "question": "What was Acme Corp's stock price on December 1, 2012?",
+      "rewritten_query": "What was Acme Corp's stock price on December 1, 2012?",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": []
+    },
+    {
+      "id": 19,
+      "category": "unanswerable_negative",
+      "question": "Who won the FIFA World Cup in 1998 according to the financial reports?",
+      "rewritten_query": "Who won the FIFA World Cup in 1998 according to the financial reports?",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": []
+    },
+    {
+      "id": 20,
+      "category": "unanswerable_negative",
+      "question": "What are the quantum computing qubit gate fidelities mentioned in the reports?",
+      "rewritten_query": "What are the quantum computing qubit gate fidelities mentioned in the reports?",
+      "answer": "I couldn't find this information in the uploaded documents.",
+      "hit": true,
+      "precision": 1.0,
+      "recall": 1.0,
+      "grounded": true,
+      "citation_correct": true,
+      "sources": []
+    }
+  ]
+}

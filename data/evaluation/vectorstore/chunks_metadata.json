@@ -1,0 +1,83 @@
+{
+  "next_id": 7,
+  "chunks": {
+    "1": {
+      "chunk_id": "eval_annual_report_2024_p1_c0_fa67e8",
+      "document_id": "eval_annual_report_2024",
+      "filename": "annual_report_2024.pdf",
+      "page_number": 1,
+      "chunk_index": 0,
+      "text": "Acme Corp Annual Report 2024.\nExecutive Summary:\nAcme Corp is a leading provider of enterprise AI workflow orchestration and cloud platforms.\nThe company was founded in 2018 and has expanded across North America and Europe.",
+      "metadata": {
+        "char_count": 223,
+        "page_chunk_index": 0
+      },
+      "id": 1
+    },
+    "2": {
+      "chunk_id": "eval_annual_report_2024_p2_c0_74766e",
+      "document_id": "eval_annual_report_2024",
+      "filename": "annual_report_2024.pdf",
+      "page_number": 2,
+      "chunk_index": 1,
+      "text": "Financial Performance 2024:\nIn fiscal year 2024, Acme Corp reported total revenue of $50 million, representing a 15% increase.\nGross profit reached $30 million with a 60% gross margin.\nResearch and Development spending was $10 million.",
+      "metadata": {
+        "char_count": 235,
+        "page_chunk_index": 0
+      },
+      "id": 2
+    },
+    "3": {
+      "chunk_id": "eval_annual_report_2024_p3_c0_867680",
+      "document_id": "eval_annual_report_2024",
+      "filename": "annual_report_2024.pdf",
+      "page_number": 3,
+      "chunk_index": 2,
+      "text": "Workforce & Operations:\nTotal employee headcount reached 450 full-time team members by the end of 2024.\nCustomer satisfaction score (CSAT) averaged 94% across all service tiers.",
+      "metadata": {
+        "char_count": 177,
+        "page_chunk_index": 0
+      },
+      "id": 3
+    },
+    "4": {
+      "chunk_id": "eval_annual_report_2025_p1_c0_1fed01",
+      "document_id": "eval_annual_report_2025",
+      "filename": "annual_report_2025.pdf",
+      "page_number": 1,
+      "chunk_index": 0,
+      "text": "Acme Corp Annual Report 2025.\nStrategic Growth:\nAccelerating enterprise adoption of generative knowledge systems.",
+      "metadata": {
+        "char_count": 113,
+        "page_chunk_index": 0
+      },
+      "id": 4
+    },
+    "5": {
+      "chunk_id": "eval_annual_report_2025_p2_c0_c8f757",
+      "document_id": "eval_annual_report_2025",
+      "filename": "annual_report_2025.pdf",
+      "page_number": 2,
+      "chunk_index": 1,
+      "text": "Financial Highlights 2025:\nIn fiscal year 2025, Acme Corp reported total revenue of $65 million, marking a 30% increase.\nOperating income rose to $18 million.",
+      "metadata": {
+        "char_count": 158,
+        "page_chunk_index": 0
+      },
+      "id": 5
+    },
+    "6": {
+      "chunk_id": "eval_annual_report_2025_p3_c0_11ad2c",
+      "document_id": "eval_annual_report_2025",
+      "filename": "annual_report_2025.pdf",
+      "page_number": 3,
+      "chunk_index": 2,
+      "text": "Workforce 2025:\nTotal global headcount expanded to 600 employees with a new European hub.",
+      "metadata": {
+        "char_count": 89,
+        "page_chunk_index": 0
+      },
+      "id": 6
+    }
+  }
+}

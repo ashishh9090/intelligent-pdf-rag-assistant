@@ -1,0 +1,30 @@
+# Environment
+.env
+.venv/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Application Data & Indexes
+data/documents/*
+!data/documents/.gitkeep
+data/vectorstore/*
+!data/vectorstore/.gitkeep
+data/chatbot.db
+data/cache/
+
+# Streamlit
+.streamlit/
+
+# OS
+# IDE / Agent artifacts
+.agents/
+.claude/

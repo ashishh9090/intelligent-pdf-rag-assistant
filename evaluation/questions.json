@@ -1,0 +1,190 @@
+[
+  {
+    "id": 1,
+    "category": "simple_factual",
+    "question": "What was Acme Corp's total revenue in fiscal year 2024?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "$50 million (representing a 15% increase).",
+    "requires_refusal": false
+  },
+  {
+    "id": 2,
+    "category": "simple_factual",
+    "question": "What was Acme Corp's gross profit and gross margin in 2024?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "$30 million with a 60% gross margin.",
+    "requires_refusal": false
+  },
+  {
+    "id": 3,
+    "category": "simple_factual",
+    "question": "How much did Acme Corp spend on Research and Development in 2024?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "$10 million.",
+    "requires_refusal": false
+  },
+  {
+    "id": 4,
+    "category": "simple_factual",
+    "question": "In what year was Acme Corp founded?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [1],
+    "ground_truth_answer": "2018.",
+    "requires_refusal": false
+  },
+  {
+    "id": 5,
+    "category": "simple_factual",
+    "question": "What was Acme Corp's total employee headcount at the end of 2024?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [3],
+    "ground_truth_answer": "450 full-time team members.",
+    "requires_refusal": false
+  },
+  {
+    "id": 6,
+    "category": "simple_factual",
+    "question": "What was the average customer satisfaction score (CSAT) in 2024?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [3],
+    "ground_truth_answer": "94%.",
+    "requires_refusal": false
+  },
+  {
+    "id": 7,
+    "category": "simple_factual",
+    "question": "What was Acme Corp's total revenue reported in 2025?",
+    "expected_documents": ["annual_report_2025.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "$65 million (marking a 30% increase).",
+    "requires_refusal": false
+  },
+  {
+    "id": 8,
+    "category": "simple_factual",
+    "question": "What was the operating income for fiscal year 2025?",
+    "expected_documents": ["annual_report_2025.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "$18 million.",
+    "requires_refusal": false
+  },
+  {
+    "id": 9,
+    "category": "simple_factual",
+    "question": "Where was the new research center opened according to the 2025 report?",
+    "expected_documents": ["annual_report_2025.pdf"],
+    "expected_pages": [3],
+    "ground_truth_answer": "European hub / Zurich.",
+    "requires_refusal": false
+  },
+  {
+    "id": 10,
+    "category": "multi_hop",
+    "question": "Based on the 2024 financial figures, what was the ratio or difference between gross profit and R&D spending?",
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "Gross profit was $30 million and R&D was $10 million (gross profit was 3x R&D spending).",
+    "requires_refusal": false
+  },
+  {
+    "id": 11,
+    "category": "multi_hop",
+    "question": "How did workforce expansion relate to strategic growth priorities between 2024 and 2025?",
+    "expected_documents": ["annual_report_2024.pdf", "annual_report_2025.pdf"],
+    "expected_pages": [1, 3],
+    "ground_truth_answer": "Headcount grew from 450 to 600 as the company accelerated enterprise generative knowledge adoption and opened a new European hub.",
+    "requires_refusal": false
+  },
+  {
+    "id": 12,
+    "category": "multi_document",
+    "question": "Compare the total revenue reported in the 2024 and 2025 reports.",
+    "expected_documents": ["annual_report_2024.pdf", "annual_report_2025.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "Revenue in 2024 was $50 million (up 15%), and revenue in 2025 was $65 million (up 30%).",
+    "requires_refusal": false
+  },
+  {
+    "id": 13,
+    "category": "multi_document",
+    "question": "How did total employee headcount change from 2024 to 2025?",
+    "expected_documents": ["annual_report_2024.pdf", "annual_report_2025.pdf"],
+    "expected_pages": [3],
+    "ground_truth_answer": "Headcount increased from 450 full-time staff in 2024 to 600 in 2025.",
+    "requires_refusal": false
+  },
+  {
+    "id": 14,
+    "category": "multi_document",
+    "question": "What were the strategic focuses stated in the executive summaries of 2024 versus 2025?",
+    "expected_documents": ["annual_report_2024.pdf", "annual_report_2025.pdf"],
+    "expected_pages": [1],
+    "ground_truth_answer": "2024 focused on enterprise AI workflow orchestration and cloud platforms; 2025 focused on accelerating enterprise adoption of generative knowledge systems.",
+    "requires_refusal": false
+  },
+  {
+    "id": 15,
+    "category": "conversational_followup",
+    "question": "How much did it increase compared to the previous year?",
+    "conversation_context": [
+      {"role": "user", "content": "What was the total revenue in 2024?"},
+      {"role": "assistant", "content": "In 2024, Acme Corp reported total revenue of $50 million."}
+    ],
+    "expected_documents": ["annual_report_2024.pdf"],
+    "expected_pages": [2],
+    "ground_truth_answer": "It represented a 15% increase.",
+    "requires_refusal": false
+  },
+  {
+    "id": 16,
+    "category": "conversational_followup",
+    "question": "How many people were in that workforce by the end of 2025?",
+    "conversation_context": [
+      {"role": "user", "content": "Tell me about Acme's operations in 2025."},
+      {"role": "assistant", "content": "In 2025, Acme expanded operations with a new European hub."}
+    ],
+    "expected_documents": ["annual_report_2025.pdf"],
+    "expected_pages": [3],
+    "ground_truth_answer": "Total global headcount reached 600 employees.",
+    "requires_refusal": false
+  },
+  {
+    "id": 17,
+    "category": "unanswerable_negative",
+    "question": "What is the secret formula for Martian rocket fuel invented in 1840?",
+    "expected_documents": [],
+    "expected_pages": [],
+    "ground_truth_answer": "I couldn't find this information in the uploaded documents.",
+    "requires_refusal": true
+  },
+  {
+    "id": 18,
+    "category": "unanswerable_negative",
+    "question": "What was Acme Corp's stock price on December 1, 2012?",
+    "expected_documents": [],
+    "expected_pages": [],
+    "ground_truth_answer": "I couldn't find this information in the uploaded documents.",
+    "requires_refusal": true
+  },
+  {
+    "id": 19,
+    "category": "unanswerable_negative",
+    "question": "Who won the FIFA World Cup in 1998 according to the financial reports?",
+    "expected_documents": [],
+    "expected_pages": [],
+    "ground_truth_answer": "I couldn't find this information in the uploaded documents.",
+    "requires_refusal": true
+  },
+  {
+    "id": 20,
+    "category": "unanswerable_negative",
+    "question": "What are the quantum computing qubit gate fidelities mentioned in the reports?",
+    "expected_documents": [],
+    "expected_pages": [],
+    "ground_truth_answer": "I couldn't find this information in the uploaded documents.",
+    "requires_refusal": true
+  }
+]
